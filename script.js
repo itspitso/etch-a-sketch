@@ -15,7 +15,7 @@ let userGrid;
     container.appendChild(div)
 }*/
 
-const gridSize = 5;
+const gridSize = 16;
 const sizeOfSquare = (512 / gridSize) - 2;
 
 // Create column containers that will house the squares
