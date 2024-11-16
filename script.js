@@ -23,11 +23,11 @@ function createGrid(gridSize) {
             console.log(div.className);
             //div.style.border = '0.5px solid black';
             //div.style.borderRadius = '5px';
-            div.style.backgroundColor = '#111111';
+            div.style.backgroundColor = '#f5f5f5';
             div.style.width = `${sizeOfSquare}px`;
             div.style.height = `${sizeOfSquare}px`;
-            div.style.marginLeft = '0.5px';
-            div.style.marginRight = '0.5px';
+            div.style.marginLeft = '1px';
+            div.style.marginRight = '1px';
             columnContainer.appendChild(div);
             div.onmouseover = changeColour;
             function changeColour() {

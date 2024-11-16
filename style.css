@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #111111;
+    color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,8 +21,8 @@ h1 {
 }
 
 #grid-size {
-    background-color: #111111;
-    color: #f5f5f5;
+    background-color: #f5f5f5;
+    color: #111111;
     padding: 8px 16px;
 }
 
@@ -36,6 +37,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     margin: auto;
 }
 
