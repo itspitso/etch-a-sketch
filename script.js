@@ -30,6 +30,8 @@ for (let i = 0; i < gridSize; i++) {
     // Creating the squares in the column container
     for (let i = 0; i < gridSize; i++) {
         const div = document.createElement('div');
+        div.className = 'squares';
+        console.log(div.className);
         //div.style.border = '0.5px solid black';
         //div.style.borderRadius = '5px';
         div.style.backgroundColor = '#111111';
@@ -37,6 +39,10 @@ for (let i = 0; i < gridSize; i++) {
         div.style.height = `${sizeOfSquare}px`;
         div.style.marginLeft = '0.5px';
         div.style.marginRight = '0.5px';
-        columnContainer.appendChild(div)
+        columnContainer.appendChild(div);
+        div.onmouseover = changeColour;
+        function changeColour() {
+            div.style.backgroundColor = 'yellow';
+        }
     }
 }
