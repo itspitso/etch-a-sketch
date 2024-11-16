@@ -3,7 +3,7 @@ const containerSize = 512;
 
 const defaultGrid = 16;
 let gridSize = 16;
-const sizeOfSquare = (containerSize / gridSize) - 2;
+let sizeOfSquare = (containerSize / gridSize) - 2;
 createGrid(defaultGrid);
 
 // Create column containers that will house the squares
@@ -40,6 +40,7 @@ function createGrid(gridSize) {
             gridSize = Number(prompt('Enter the number of squares per side for the new grid. The maximum is 100'));
             //const squares = document.getElementsByClassName('squares');
             container.replaceChildren();
+            sizeOfSquare = (containerSize / gridSize) - 2;
             createGrid(gridSize);
             }
         }
