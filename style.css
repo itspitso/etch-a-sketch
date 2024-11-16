@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 16px;
+}
+
+#grid-size {
+    background-color: #111111;
+    color: #f5f5f5;
+    padding: 8px 16px;
+    margin: auto;
 }
 
 #container {
@@ -18,3 +25,4 @@ h1 {
     justify-content: space-evenly;
     margin: auto;
 }
+
