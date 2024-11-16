@@ -38,10 +38,15 @@ function createGrid(gridSize) {
 
             function defineGridSize() {
             gridSize = Number(prompt('Enter the number of squares per side for the new grid. The maximum is 100'));
-            //const squares = document.getElementsByClassName('squares');
+            if (gridSize > 100) {
+                container.replaceChildren();
+                container.innerText = "Maximum is 100. Try again";
+                container.style.textAlign = 'center';
+            } else {
             container.replaceChildren();
             sizeOfSquare = (containerSize / gridSize) - 2;
             createGrid(gridSize);
+                }
             }
         }
         
